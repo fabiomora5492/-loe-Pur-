@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ÁLOE PURE: shampoo elaborado con sábila, presentación de 350 ml y empaque ecoamigable.">
+<title>ÁLOE PURE | La naturaleza transforma tu cabello</title>
+<style>
+:root{--forest:#174d35;--green:#287b4c;--lime:#c9e86a;--cream:#fbf8ed;--mint:#e8f3df;--gold:#f2c94c;--ink:#23372b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:rgba(251,248,237,.94);backdrop-filter:blur(10px);border-bottom:1px solid #e4eadb}
+nav{max-width:1120px;margin:auto;padding:15px 6%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.45rem;font-weight:900;letter-spacing:2px;color:var(--forest)}.logo span{color:var(--green)}
+nav a{color:var(--forest);text-decoration:none;font-weight:700;margin-left:24px;font-size:.94rem}
+.hero{overflow:hidden;background:radial-gradient(circle at 78% 40%,#d9edaa 0,#eaf3d8 27%,#f7f5e9 65%);padding:70px 6% 76px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:38px}
+.eyebrow{display:inline-block;color:var(--green);background:#e2efcf;padding:7px 14px;border-radius:30px;font-weight:700;font-size:.8rem;letter-spacing:1.3px;text-transform:uppercase}
+h1{font-size:clamp(3rem,7vw,5.7rem);line-height:.98;letter-spacing:-3px;color:var(--forest);margin:20px 0}
+h1 span{color:var(--green)}.lead{font-size:1.18rem;max-width:510px;color:#526653}
+.price{font-size:2rem;font-weight:900;color:var(--forest);margin:22px 0 4px}.detail{font-size:.95rem;color:#5b6d5c}
+.btn{display:inline-block;background:var(--forest);color:white;text-decoration:none;padding:14px 24px;border-radius:30px;font-weight:800;margin-top:22px;box-shadow:0 8px 20px #174d3526;transition:.2s}
+.btn:hover{transform:translateY(-2px);background:var(--green)}
+.visual{min-height:390px;display:grid;place-items:center;position:relative}
+.sun{position:absolute;width:330px;height:330px;border-radius:50%;background:linear-gradient(145deg,#d5eb91,#a8d36b);box-shadow:0 20px 60px #608c3b24}
+.leaf{position:absolute;font-size:6rem;filter:drop-shadow(0 12px 10px #335b2822)}.leaf.one{left:2%;top:12%;transform:rotate(-28deg)}.leaf.two{right:0;bottom:10%;transform:rotate(35deg)}
+.bottle{position:relative;z-index:2;width:185px;height:285px;border-radius:28px 28px 34px 34px;background:linear-gradient(100deg,#f9ffe9,#d9eebc 48%,#b9d88d);box-shadow:inset -12px 0 18px #769b4b33,0 25px 35px #365b2d35;border:2px solid #ffffffa8;text-align:center;padding-top:14px;transform:rotate(-4deg)}
+.cap{width:83px;height:33px;background:#245b3b;border-radius:8px 8px 4px 4px;margin:-42px auto 9px;box-shadow:inset 0 5px 0 #ffffff25}
+.bottle-label{margin:28px 12px 0;background:#f9f8e9;border-radius:12px;padding:17px 7px 14px;color:var(--forest);box-shadow:0 4px 12px #31562a20}
+.bottle-label strong{display:block;font-size:1.35rem;letter-spacing:1px}.bottle-label small{display:block;font-size:.64rem;letter-spacing:1px;margin-top:7px}.bottle-label b{display:block;font-size:.78rem;margin-top:12px}
+section{padding:76px 6%}.wrap{max-width:1120px;margin:auto}.section-title{text-align:center;color:var(--forest);font-size:2.25rem;line-height:1.15;margin:0 0 12px}.section-intro{text-align:center;color:#647264;max-width:650px;margin:0 auto 38px}
+.benefits{background:#fff}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--cream);padding:25px 20px;border-radius:20px;border:1px solid #e8eddf;text-align:center}.icon{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;background:var(--mint);font-size:2rem;margin:0 auto 14px}.card h3{color:var(--forest);margin:8px 0}.card p{font-size:.94rem;color:#657265;margin:0}
+.nature{background:var(--mint)}.nature-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.nature-art{min-height:290px;border-radius:28px;background:linear-gradient(145deg,#b9d98b,#e5efc7);display:grid;place-items:center;font-size:8rem;position:relative;overflow:hidden}.nature-art:after{content:"";position:absolute;width:240px;height:240px;border:2px solid #ffffff80;border-radius:50%}
+.nature-copy h2{font-size:2.25rem;color:var(--forest);line-height:1.15}.nature-copy p{color:#536853}
+.eco{background:var(--forest);color:#fff;text-align:center}.eco h2{color:#e0f0b4}.eco p{max-width:700px;margin:12px auto;color:#e5eddf}.eco .btn{background:var(--lime);color:var(--forest)}
+.buy{background:var(--cream)}.buy-panel{max-width:780px;margin:auto;background:#fff;border-radius:26px;padding:35px;text-align:center;box-shadow:0 15px 45px #254d2a12;border:1px solid #e8eddf}.buy-panel h2{color:var(--forest);font-size:2rem;margin:0}.buy-price{font-size:2.5rem;color:var(--green);font-weight:900;margin:8px}.buy-panel p{color:#647264}
+footer{background:#123d2b;color:#e7efdf;padding:28px 6%;text-align:center;font-size:.9rem}footer strong{letter-spacing:2px}
+@media(max-width:760px){nav{padding:13px 5%}nav a{margin-left:12px;font-size:.82rem}.hero{padding:52px 6%}.hero-inner,.nature-grid{grid-template-columns:1fr}.visual{min-height:340px}.sun{width:270px;height:270px}.cards{grid-template-columns:repeat(2,1fr)}section{padding:58px 6%}}
+@media(max-width:430px){nav a{margin-left:8px;font-size:.75rem}.logo{font-size:1.15rem}.cards{grid-template-columns:1fr}.bottle{transform:scale(.9) rotate(-4deg)}.section-title{font-size:1.9rem}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">ÁLOE <span>PURE</span></div><div><a href="#beneficios">Beneficios</a><a href="#natural">Nuestra esencia</a><a href="#comprar">Comprar</a></div></nav></header>
+<main>
+<section class="hero"><div class="hero-inner">
+<div><span class="eyebrow">Belleza que nace de la naturaleza</span><h1>La naturaleza<br><span>transforma</span><br>tu cabello.</h1>
+<p class="lead">Descubre ÁLOE PURE, shampoo elaborado con sábila para acompañar tu rutina de cuidado capilar con una sensación de frescura, suavidad y bienestar.</p>
+<div class="price">$12.000</div><div class="detail">Presentación de 350 ml · Empaque ecoamigable</div><a class="btn" href="#comprar">Conoce nuestro producto</a></div>
+<div class="visual"><div class="sun"></div><div class="leaf one">🌿</div><div class="leaf two">🍃</div><div class="bottle"><div class="cap"></div><div class="bottle-label"><strong>ÁLOE<br>PURE</strong><small>SHAMPOO DE SÁBILA</small><b>FRESCURA NATURAL</b><small>350 ml</small></div></div></div>
+</div></section>
+<section class="benefits" id="beneficios"><div class="wrap"><h2 class="section-title">El cuidado natural que tu cabello merece</h2><p class="section-intro">La sábila es reconocida en el cuidado cosmético por sus cualidades hidratantes y acondicionadoras. Inclúyela en tu rutina y disfruta de una experiencia inspirada en la naturaleza.</p>
+<div class="cards">
+<article class="card"><div class="icon">💧</div><h3>Hidratación</h3><p>Ayuda a conservar la humedad y a mejorar la sensación de suavidad del cabello.</p></article>
+<article class="card"><div class="icon">✨</div><h3>Brillo natural</h3><p>Contribuye a que el cabello luzca más luminoso y con una apariencia saludable.</p></article>
+<article class="card"><div class="icon">🌱</div><h3>Suavidad</h3><p>Ayuda a dejar el cabello con una textura agradable y más fácil de manejar.</p></article>
+<article class="card"><div class="icon">🍃</div><h3>Frescura</h3><p>Convierte el lavado diario en un momento de bienestar y conexión con lo natural.</p></article>
+</div></div></section>
+<section class="nature" id="natural"><div class="wrap nature-grid"><div class="nature-art">🌿</div><div class="nature-copy"><span class="eyebrow">Nuestra esencia</span><h2>Inspirados en el poder de la sábila.</h2><p>En ÁLOE PURE creemos que el cuidado personal puede ir de la mano con el respeto por el planeta. Por eso, nuestro producto se presenta en un empaque ecoamigable, pensado para promover decisiones de consumo más conscientes.</p><p>Un pequeño cambio en tu rutina puede ser una oportunidad para elegir con mayor conciencia.</p></div></div></section>
+<section class="eco"><div class="wrap"><h2 class="section-title">Cuida tu cabello. Respeta la naturaleza.</h2><p>Disfruta el cuidado inspirado en la sábila y elige un producto que también comunica un compromiso con el medio ambiente a través de su empaque ecoamigable.</p><a class="btn" href="#comprar">Quiero conocer ÁLOE PURE</a></div></section>
+<section class="buy" id="comprar"><div class="buy-panel"><span class="eyebrow">Tu rutina, más natural</span><h2>ÁLOE PURE</h2><p>Shampoo elaborado con sábila</p><div class="buy-price">$12.000</div><p><strong>350 ml</strong> · Empaque ecoamigable</p><a class="btn" href="mailto:?subject=Quiero%20informaci%C3%B3n%20sobre%20%C3%81LOE%20PURE">Solicitar información</a><p style="font-size:.8rem;margin-top:18px">Consulta disponibilidad y puntos de venta.</p></div></section>
+</main>
+<footer><strong>ÁLOE PURE</strong><br>La naturaleza transforma tu cabello.<br>© 2026 ÁLOE PURE · Cuidado capilar inspirado en la naturaleza</footer>
+</body></html>
